@@ -1,0 +1,21 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "homepage": "https://anaik23.github.io/weather-app",
+  "scripts": {
+    "predeploy": "cd client && npm install && npm run build",
+    "deploy": "gh-pages -d client/build",
+    "start": "concurrently \"npm run start --prefix client\" \"npm run start --prefix server\"",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "gh-pages": "^6.1.1",
+    "react-scripts": "^5.0.1"
+  },
+  "dependencies": {
+    "express-validator": "^7.2.0"
+  }
+}
